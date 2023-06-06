@@ -106,7 +106,7 @@ app.post('/callback', async (req, res) => {
       iss: issuer
     } = verifiedToken;
     const currentTime = Math.floor(Date.now() / 1000);
-    const expectedAudience = process.env.CLIENT_ID;
+    const expectedAudience = 'fEEvYNSuVOibJfFqoeVYh0bHRyOwSbDx';
     if (
       audience !== expectedAudience ||
       decodedNonce !== nonce ||
